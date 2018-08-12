@@ -1,14 +1,9 @@
-const initialState = {
+export default counter(state = 0, action) => {
+    switch (action.type) {
+        case "INCREMENT":
+            return state + 1
 
-}
-
-export default counter (state = initialState, action) => {
-  switch (action.type) {
-
-  case typeName:
-    return { ...state }
-
-  default:
-    return state
-  }
+        default:
+            return state
+    }
 }
