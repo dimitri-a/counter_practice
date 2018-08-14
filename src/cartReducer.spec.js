@@ -6,6 +6,6 @@ describe('cart reducer', () => {
     }
 
     it('should handle addtocart action', () => {
-        expect(cartReducer(initialstate, { type: 'ADDTOCART', productId: 1 })).toEqual({ items: [1] });
+        expect(cartReducer(initialstate, { type: 'ADDTOCART', productId: 'cat' })).toEqual({ items: ['cat'] });
     })
 })
