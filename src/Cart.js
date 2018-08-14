@@ -16,11 +16,13 @@ export class cart extends Component {
     console.log('items',this.props.items);
     return (
       <div>
-        {/* <ul>
-          {this.props.items.map(item) => (
-         <li>item</li>
-          )}
-       </ul> */}
+        <ul>
+          {
+            this.props.items.map( (item) =>{ 
+             return <li>{item}</li>
+            } )
+          }
+       </ul>
 
         <label>itemname to add</label> <input type="text" ref="txt" />
         <button onClick={this.onAdd}>add to cart</button>
