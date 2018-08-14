@@ -2,26 +2,23 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export class Counter extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
+export class cart extends Component {
 
   render() {
     return (
       <div>
-        Hello from counter
+       this is the first item: {this.props.items[0]}
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
- counter: state.counter
+    items:state.items
 })
 
 const mapDispatchToProps = {
   
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Counter)
+export default connect(mapStateToProps, mapDispatchToProps)(cart)

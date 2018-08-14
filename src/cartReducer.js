@@ -1,5 +1,5 @@
 const initialState = {
-  items:[] //array productids
+  items:[1] //array productids
 }
 
 export default (state = initialState, action) => {
